@@ -20,7 +20,7 @@ async function main(){
         await downloadS3Folder(`output/${id}`);
         await buildProject(id);
         await copyFinalDist(id);
-        console.log("HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
+       
         publisher.hSet("status", id, "deployed")
 
         
